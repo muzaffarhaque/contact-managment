@@ -10,20 +10,24 @@ export const Route: React.FC = () => {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <Layout/>,
+            element: <Layout />,
             children: [
                 {
-                  path: "/",
-                  element: <Home/>,
+                    path: "/",
+                    element: <Home />,
                 },
                 {
-                  path: "/dashboard",
-                  element: <Dashboard/>,
+                    path: "/dashboard",
+                    element: <Dashboard />,
                 },
-              ],
+            ],
         },
-      
-    ]);
+
+    ],
+        {
+            basename: import.meta.env.DEV ? "/" : "/contact/",
+        }
+    );
 
     return (
         <div>
