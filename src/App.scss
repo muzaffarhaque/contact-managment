@@ -1,0 +1,428 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+html {
+    font-size: 10px;
+}
+* {
+    font-family: 'Poppins', sans-serif;
+}
+$primary: #270089;
+$secondary: #F6F6F6; // USE AS BACKGROUND COLOR
+
+$white: #FFFFFF;
+$black: #000000;
+
+$grey-1: rgba(61, 79, 87, 1);
+$grey-2: rgba(36, 46, 61, 0.20);
+$grey-3: rgb(110, 109, 109);
+$grey-4: rgba(255, 255, 255, 0.25);
+$grey-5: rgb(193, 193, 193);
+$grey-DDD: #DDDDDD;
+$grey-D9D: #D9D9D9;
+$grey-F1F: #F1F1F1;
+$grey-F9F: #F9F9F9;
+$grey-757: #757575;
+$grey-EBE: #EBEBEB;
+$grey-929: #929292;
+$grey-919: #919191;
+$grey-C4C: #C4C4C4;
+$grey-CED: #CEd4DA;
+$grey-CCC: #CCCCCC;
+$grey-ECE: #ECECEC;
+$grey-EEE: #EEEEEE;
+$grey-E6E: #E6E0E9;
+$grey-799: #79747E;
+$grey-999: #999999;
+$grey-CDC: #cdcdcd;
+$grey-C9D: #D9D9D9;
+$grey-131: #13171E;
+$grey-151: #515151;
+$green-4CA: #4CAE4C;
+$green-A5F: #A5F5DC;
+$green-8EC: #8EC44A;
+$red-D43: #D43F3A;
+$red-DC3: #DC3545;
+$red-EF0: #EF0048;
+$pink-CC0: #CC0199;
+$green-5DF: #5DFDCB;
+$black-707: #707070;
+$black-797: #79747E;
+$yellow-FFD: #FFD600;
+$black-495: #49454F;
+$black-252: #252F3E;
+$black-242: #242E3D;
+$black-1: rgba(36, 46, 61,.8);
+$black-2: rgba(36, 46, 61,.9);
+$black-3: rgba(0, 0, 0, 0.25);
+$black-4: rgba(36, 46, 61, 0.50);
+$black-5: rgba(12, 12, 12,.7);
+$black-6: rgba(0, 0, 0, 0.15);
+$black-7: rgba(0, 0, 0, 0.30);
+$black-8: rgba(236, 236, 236, 0.00);
+$black-9: rgba(117, 117, 117,.1);
+$black-10: rgba(117, 117, 117,.8);
+
+.container {
+    width: 100% !important;
+    max-width: 144rem !important;
+    padding: 0 10rem !important;
+}
+
+/* ======================== COMMON CSSS START ==================== */
+.desk-show {}
+.mb-flex,
+.mb-show {
+    display: none;
+}
+
+.primary {
+    color: $primary;
+}
+.black-242 {
+    color: $black-242;
+}
+.black-707 {
+    color: $black-707;
+}
+.black-495 {
+    color: $black-495;
+}
+.green-5DF {
+    color: $green-5DF;
+}
+.bg-ECE {
+    background: $grey-ECE;
+}
+.bg-primary {
+    background-color: $primary !important;
+}
+.grey-151 {
+    color: $grey-151;
+}
+.grey-919 {
+    color: $grey-919;
+}
+.black-242 {
+    color: $black-242;
+}
+// ========= FONT SICE RESPONSIVE -----------------------
+.fs-32-28 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+}
+.fs-32-24 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+}
+.fs-36-24 {
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+}
+.fs-18-12,
+.fs-18-14,
+.fs-18-9 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+.fs-57-32,
+.ft-57-32 {
+    font-size: 5.7rem;
+    line-height: 6.4rem;
+}
+.fs-75-41 {
+    font-size: 7.5rem;
+    line-height: 8.4rem;
+}
+.fs-22-13,
+.fs-22-18,
+.fs-22-16 {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+}
+.fs-26-12 {
+    font-size: 2.6rem;
+    line-height: 2.9rem;
+}
+.fs-14-11,
+.fs-14-13,
+.fs-14-9 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+.fs-28-18,
+.fs-28-24,
+.ft-28-18 {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+}
+.fs-14-12,
+.fx-14 {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+.fs-14-10 {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+.fs-24-14,
+.fs-24-16,
+.fs-24-18,
+.fx-24 {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+}
+.fs-16-12,
+.fs-16-13,
+.fs-16-14,
+.fx-16 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+.fx-12 {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-700 {
+    font-weight: 700;
+}
+.fw-900 {
+    font-weight: 900;
+}
+
+// ========= FONT SICE RESPONSIVE -----------------------
+.desk-show {}
+.cancel-menu,
+.mb-show,
+.menu-bar,
+.tab-show {
+    display: none;
+}
+.mb-flex {
+    display: none !important;
+}
+.search-border {
+    border: 0.1rem solid $black-4;
+}
+.pointer {
+    cursor: pointer;
+}
+.mw-90 {
+    width: 9rem;
+}
+.mw-698 {
+    max-width: 69.8rem;
+    width: 100%;
+}
+.right-0 {
+    right: 0;
+}
+.input-box {
+    border-radius: 0.1rem;
+    // border: 1px solid $primary;
+    background: $white;
+    color: $black-242;
+    background-color:$grey-EBE;
+    border: none;
+    border-bottom: .1rem solid $black-252;
+    // max-width: 27rem;
+    padding: 0.6rem 1rem;
+    outline: none;
+    &::placeholder {
+        color: $black-242;
+        opacity: 0.5;
+    }
+}
+.higheLight {
+    border: 1px solid $black-242;
+    color: $black-242;
+}
+.primary-btn {
+    border-radius: 0.8rem;
+    padding: 1rem 2.4rem;
+    color: $white;
+    border-radius: 0.8rem;
+    border: 1.7px solid var(--$white, $white);
+    background: var(--f-inblue, $primary);
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+    text-align: center;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(136, 208, 244);
+        color: black;
+    }
+    &:active{
+        background-color: rgb(245, 208, 208);
+    }
+}
+.secondary-btn {
+    padding: 0.5rem 1.6rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid $white;
+    background-color: $white;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    // @include font($primary, "Inter-Regular", 1.4rem, 500, 2rem);
+}
+// COLOR
+.primary {
+    color: $primary;
+}
+.secondary {
+    color: $secondary;
+}
+.grey-757 {
+    color: $grey-757;
+}
+.grey-D9D {
+    color: $grey-D9D;
+}
+
+.bg-green-4CA {
+    background-color: $green-4CA;
+}
+.bg-red-D43 {
+    background-color: $red-D43;
+}
+
+.mb-10 {
+    margin-bottom: 1rem;
+}
+.pb-10 {
+    padding-bottom: 1rem;
+}
+.pb-20 {
+    padding-bottom: 2rem;
+}
+@media (max-width:1240px) {
+.container{
+    padding: 0 5% !important;  
+}
+}
+/* ======================== COMMON CSSS END ==================== */
+@media (max-width:820px) {
+    // todo: ========= FONT SICE RESPONSIVE -----------------------
+   
+    .fs-57-32 {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+    }
+    .fs-75-41 {
+        font-size: 4.1rem;
+        line-height: 5.4rem;
+    }
+    .fs-16-14,
+    .fs-18-14,
+    .fs-24-14 {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    .fs-16-13 {
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+    }
+    .fs-28-24,
+    .fs-36-24 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+    .fs-14-9,
+    .fs-18-9 {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+    }
+    .fs-14-10 {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    .fs-32-28 {
+        font-size: 2.8rem;
+        line-height: 3.2rem;
+    }
+    .fs-32-24 {
+        font-size: 2.4rem;
+        line-height: 3.7rem;
+    }
+    .fs-22-13 {
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+    }
+    .fs-22-18,
+    .fs-24-18,
+    .fs-28-18 {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+    .fs-14-13 {
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+    }
+    .fs-24-16,.fs-22-16 {
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
+    .fs-14-12,
+    .fs-16-12,
+    .fs-18-12,
+    .fs-26-12 {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+    .fs-14-11 {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    }
+
+    // ========= FONT SICE RESPONSIVE -----------------------
+    .container {
+        margin: 0;
+        padding: 0 5% !important;
+    }
+    .page-padding {
+        padding: 9rem 0 0;
+    }
+    // =================== COMON CSS START ==================
+    .dt-show {
+        display: none;
+    }
+    .pb-60-40 {
+        padding-bottom: 4rem;
+    }
+    .mb-show {
+        display: block !important;
+    }
+    .mb-border-none {
+        border: none !important;
+    }
+    .mb-none {
+        display: none !important;
+    }
+    .mb-flex {
+        display: flex !important;
+    }
+    .mb-67 {
+        margin-bottom: 0.3rem;
+    }
+    .fw-65 {
+        font-weight: 500;
+    }
+    // =================== COMON CSS END ==================
+}
