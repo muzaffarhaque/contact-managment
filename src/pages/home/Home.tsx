@@ -91,7 +91,7 @@ const DetalsForm: React.FC<Props> = ({edit=null,onClick }) => {
         uuid:number | null,
     }
     const [formInfo,setFormInfo]=useState<details>({firstName:edit?.firstName ||"",lastName:edit?.lastName || "",status:edit?.status || "",uuid:Date.now()});
-    const { firstName, lastName, status,uuid } = formInfo;
+    const { firstName, lastName, status, uuid} = formInfo;
    const changeHandler=(e:React.ChangeEvent<HTMLInputElement>)=>{
     setFormInfo({...formInfo,[e.target.name]:e.target.value});
     // console.log(formInfo)

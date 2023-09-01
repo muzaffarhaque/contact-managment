@@ -4,7 +4,7 @@ import Loader from "../../assets/images/loading-spinner.gif";
 import { Image } from 'react-bootstrap';
 import "leaflet/dist/leaflet.css";
 import { fetchData } from '../../server/api/Api';
-import marker from "../../assets/images/marker.png";
+// import marker from "../../assets/images/marker.png";
 import './map.scss';
 interface Country {
   country: string;

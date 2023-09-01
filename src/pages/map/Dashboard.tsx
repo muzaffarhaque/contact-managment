@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import CovidMap from './CovidMap'
-import Loader from "../../assets/images/loading-spinner.gif";
-import { Image } from 'react-bootstrap';
 import { GiDeathStar } from "react-icons/gi"
 import { FcDataRecovery } from "react-icons/fc"
 import { TbCurrentLocation, TbPresentationAnalytics } from "react-icons/tb"
