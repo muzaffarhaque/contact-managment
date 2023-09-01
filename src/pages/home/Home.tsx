@@ -94,7 +94,7 @@ const DetalsForm: React.FC<Props> = ({edit=null,onClick }) => {
     const { firstName, lastName, status, uuid} = formInfo;
    const changeHandler=(e:React.ChangeEvent<HTMLInputElement>)=>{
     setFormInfo({...formInfo,[e.target.name]:e.target.value});
-    // console.log(formInfo)
+    console.log(uuid)
    }
    
     const submitHandler=(e: React.FormEvent<HTMLFormElement>)=>{
