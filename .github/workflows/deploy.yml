@@ -14,15 +14,11 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
 
-      # - name: Setup Node
-      #   uses: actions/setup-node@v1
-      #   with:
-      #     node-version: 16
-      - name: Set up Node.js
-        run: |
-          curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-          sudo apt-get install -y nodejs
-        shell: bash
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+    
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
