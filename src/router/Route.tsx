@@ -23,10 +23,7 @@ export const Route: React.FC = () => {
             ],
         },
 
-    ],
-        {
-            basename: import.meta.env.DEV ? "/" : "/contact/",
-        }
+    ]
     );
 
     return (
